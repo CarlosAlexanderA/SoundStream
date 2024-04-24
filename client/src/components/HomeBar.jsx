@@ -1,13 +1,28 @@
 import React from 'react'
-import { Text, View } from 'react-native'
-import { HomeHeader } from './Headers/HomeHeader'
+import { StyleSheet, View } from 'react-native'
+import { ButtonBig } from './buttons/ButtonBig'
 
 export function HomeBar () {
   return (
     <View>
-      <HomeHeader />
-      <Text>HomeBar</Text>
+      <View style={styles.buttonsView}>
+        <ButtonBig>
+          Play
+        </ButtonBig>
+        <ButtonBig>
+          Aleatorio
+        </ButtonBig>
+
+      </View>
 
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  buttonsView: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    gap: 80
+  }
+})
