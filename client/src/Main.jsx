@@ -8,6 +8,8 @@ import { NavigationContainer } from '@react-navigation/native'
 import { HomeHeader } from './components/Headers/HomeHeader'
 import { LinearGradient } from 'expo-linear-gradient'
 import { AntDesign, MaterialCommunityIcons } from '@expo/vector-icons'
+import Liked from './Liked'
+import { LikedHeader } from './components/Headers/LikedHeader'
 
 const Tab = createBottomTabNavigator()
 
@@ -49,8 +51,9 @@ export default function main () {
             />
             <Tab.Screen
               name="Me musta"
-              component={Algo}
+              component={Liked}
               options={{
+                header: LikedHeader,
                 tabBarLabel: 'Tus me gusta',
                 tabBarIcon: ({ color, size }) => (
                   <AntDesign name="heart" size={size} color={color} />

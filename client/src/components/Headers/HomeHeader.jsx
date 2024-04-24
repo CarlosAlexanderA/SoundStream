@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 10,
-    marginHorizontal: 10
+    marginHorizontal: 10,
+    marginTop: 10
 
   },
   textInput: {
