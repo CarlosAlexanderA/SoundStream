@@ -1,8 +1,8 @@
 import React from 'react'
 import { FlatList, StyleSheet, View } from 'react-native'
-import { HomeBar } from './components/HomeBar'
-import { CardInfo } from './components/cards/CardInfo'
-import { dataJson } from '../data'
+import { HomeBar } from '../components/HomeBar'
+import { CardInfo } from '../components/cards/CardInfo'
+import { dataJson } from '../../data'
 export default function Home () {
   return (
     <View style={styles.container} >

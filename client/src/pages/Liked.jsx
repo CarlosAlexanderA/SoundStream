@@ -1,9 +1,9 @@
 import React from 'react'
 import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native'
-import { Play } from './components/buttons/Play'
+import { Play } from '../components/buttons/Play'
 import { FontAwesome } from '@expo/vector-icons'
-import { dataJson } from '../data'
-import { CardInfo } from './components/cards/CardInfo'
+import { dataJson } from '../../data'
+import { CardInfo } from '../components/cards/CardInfo'
 
 export default function Liked () {
   return (
